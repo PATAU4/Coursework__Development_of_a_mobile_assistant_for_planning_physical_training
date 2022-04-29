@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMetInfo">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="672dp"
+        android:text="Правильное выполнение отжиманий от пола:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="403dp"
+        android:layout_height="462dp"
+        android:layout_marginBottom="168dp"
+        android:text="Примите упор лежа (лягте лицом вниз на пол, руки поставьте чуть шире плеч). Придайте телу правильную позу для отжиманий от пола ‒ форму прямой линии. Плечи должны быть немного выше уровня таза. Голова должна смотреть в пол. Ладони — на вертикали плеч, параллельно друг другу, направление пальцев — параллельно телу. Правильная постановка рук при классических отжиманиях от пола — на ширине плеч или немного шире. Руки согнуты, локти направлены в стороны под углом 45 градусов от тела, пальцы рук смотрят вперед Положение стоп непринципиально: они могут быть сведены либо расставлены. Плавно сгибайте локти медленно опускайтесь вниз, после чего поднимитесь обратно. Нижняя точка — по достижении прямого угла между бицепсом и предплечьем. Грудь касается пола. В верней позиции руки не распрямляют до конца, чтобы не блокировать локтевой сустав. В верхней точке задержаться. Чтобы повысить эффективность упражнения и не допустить травмоопасной осевой нагрузки на позвоночник, напрягите мышцы пресса."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

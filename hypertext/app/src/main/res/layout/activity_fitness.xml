@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3D4343"
+    tools:context=".Fitness_Activity">
+
+    <TextView
+        android:id="@+id/bottom_panel"
+        android:layout_width="414dp"
+        android:layout_height="50dp"
+        android:background="#232322"
+        android:outlineAmbientShadowColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/manual_page"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home_page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/book_image_foreground" />
+
+    <ImageView
+        android:id="@+id/home_page"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/fill_home_main_foreground" />
+
+    <ImageView
+        android:id="@+id/fitness_page"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toEndOf="@+id/manual_page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/stan_fill_main_page_foreground" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/delete_table_training"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="247dp"
+        android:layout_height="47dp"
+        android:text="Удалить тренировки"
+        android:textColor="#F5F5DC"
+        android:textSize="12sp"
+        app:cornerRadius="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/new_train"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#F5F5DC" />
+
+    <Button
+        android:id="@+id/new_train"
+        android:layout_width="368dp"
+        android:layout_height="44dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Создать новую тренировку"
+        android:textColor="#F5F5DC"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_panel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.967" />
+
+    <LinearLayout
+        android:layout_width="391dp"
+        android:layout_height="612dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/delete_table_training"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="62dp">
+
+            <TextView
+                android:id="@+id/select_training"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="0dp"
+                android:text="Ваши тренировки"
+                android:textColor="#F5F5DC"
+                android:textSize="34sp"></TextView>
+
+            <ImageView
+                android:id="@+id/menu_of_training"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="83dp"
+                app:srcCompat="@mipmap/menu_foreground" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/selected_training"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="22sp"></TextView>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="22sp"></TextView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

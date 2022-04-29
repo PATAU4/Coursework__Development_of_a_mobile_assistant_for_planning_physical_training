@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14166666666666666" />
+        <entry key="app/src/main/res/drawable/book_image_background.xml" value="0.23333333333333334" />
+        <entry key="app/src/main/res/drawable/books_2_background.xml" value="0.23333333333333334" />
+        <entry key="app/src/main/res/drawable/check_no_background.xml" value="0.23333333333333334" />
+        <entry key="app/src/main/res/drawable/check_yes_background.xml" value="0.23333333333333334" />
+        <entry key="app/src/main/res/drawable/custom_input.xml" value="0.17395833333333333" />
+        <entry key="app/src/main/res/drawable/fill_home_main_background.xml" value="0.2625" />
+        <entry key="app/src/main/res/drawable/home_image_background.xml" value="0.23333333333333334" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.14166666666666666" />
+        <entry key="app/src/main/res/drawable/input_new_train.xml" value="0.2625" />
+        <entry key="app/src/main/res/drawable/menu_background.xml" value="0.23333333333333334" />
+        <entry key="app/src/main/res/drawable/red_button.xml" value="0.20416666666666666" />
+        <entry key="app/src/main/res/drawable/shape.xml" value="0.2625" />
+        <entry key="app/src/main/res/drawable/stan_fill_main_page_background.xml" value="0.23333333333333334" />
+        <entry key="app/src/main/res/drawable/work_out_2_background.xml" value="0.23333333333333334" />
+        <entry key="app/src/main/res/drawable/work_out_background.xml" value="0.23333333333333334" />
+        <entry key="app/src/main/res/font/raleway.xml" value="0.21822916666666667" />
+        <entry key="app/src/main/res/layout/activity_creating_train.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_edit_physical_params.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_example_of_workouts.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_fitness.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_greetings.xml" value="0.12552083333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main_menu.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_manual.xml" value="0.21898148148148147" />
+        <entry key="app/src/main/res/layout/activity_new.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_physical_params.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_tips.xml" value="0.21898148148148147" />
+        <entry key="app/src/main/res/layout/activity_variants_of_workout.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/custom_input.xml" value="0.12001811594202899" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.12001811594202899" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.12001811594202899" />
+        <entry key="app/src/main/res/layout/sign_in.xml" value="0.165" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/book_image.xml" value="0.23333333333333334" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/books.xml" value="0.23333333333333334" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/books_2.xml" value="0.23333333333333334" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/books_2_round.xml" value="0.12546296296296297" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

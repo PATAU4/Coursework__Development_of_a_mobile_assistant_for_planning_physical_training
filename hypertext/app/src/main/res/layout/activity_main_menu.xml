@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu"
+    android:background="#363636">
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="396dp"
+        android:layout_height="313dp"
+        android:maxDate="1/1/2024"
+        android:minDate="4/25/2022"
+        android:onClick="onClick"
+        android:selectedWeekBackgroundColor="#ff0000"
+        android:weekNumberColor="#0000ff"
+        android:weekSeparatorLineColor="#00ff00"
+        app:layout_constraintBottom_toTopOf="@+id/manual_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/select_training"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Тренировочные дни: "
+        android:textColor="#F5F5DC"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/manual_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"
+        app:layout_constraintVertical_bias="0.039"></TextView>
+
+    <ListView
+        android:id="@+id/mainListView"
+        android:layout_width="281dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/manual_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_training" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/clear"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:text="Очистить"
+        android:textColor="#F5F5DC"
+        android:textSize="12sp"
+        app:cornerRadius="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/fitness_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mainListView"
+        app:layout_constraintTop_toBottomOf="@+id/select_training"
+        app:strokeColor="#F5F5DC" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="414dp"
+        android:layout_height="50dp"
+        android:background="#232322"
+        android:outlineAmbientShadowColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/manual_page"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home_page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/book_image_foreground" />
+
+    <ImageView
+        android:id="@+id/home_page"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/fill_home_main_foreground" />
+
+    <ImageView
+        android:id="@+id/fitness_page"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toEndOf="@+id/manual_page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/stan_fill_main_page_foreground" />
+</androidx.constraintlayout.widget.ConstraintLayout>

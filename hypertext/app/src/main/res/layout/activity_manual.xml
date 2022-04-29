@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#363636"
+    tools:context=".Manual_Activity">
+
+
+    <TextView
+        android:id="@+id/very_cool_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:shadowColor="@color/black"
+        android:text="НЕВЕРОТЯНО КРАСИВАЯ КАРТИНКА"
+        android:textColor="#F5F5DC"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/physical_params"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.502" />
+
+    <TextView
+        android:id="@+id/omg_much_better_img"
+        android:layout_width="373dp"
+        android:layout_height="119dp"
+        android:fontFamily="casual"
+        android:shadowColor="@color/black"
+        android:text="ЕЩЕ БОЛЕЕ КРАСИВАЯ КАРТИНКА"
+        android:textColor="#F5F5DC"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/tips"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/physical_params"
+        app:layout_constraintVertical_bias="0.604" />
+
+    <TextView
+        android:id="@+id/bottom_panel"
+        android:layout_width="414dp"
+        android:layout_height="50dp"
+        android:background="#232322"
+        android:outlineAmbientShadowColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/manual_page"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home_page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/book_image_foreground" />
+
+    <ImageView
+        android:id="@+id/home_page"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/fill_home_main_foreground" />
+
+    <ImageView
+        android:id="@+id/fitness_page"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toEndOf="@+id/manual_page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/stan_fill_main_page_foreground" />
+
+    <Button
+        android:id="@+id/physical_params"
+        android:layout_width="368dp"
+        android:layout_height="44dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Мои физические показатели"
+        android:textColor="#F5F5DC"
+        app:layout_constraintBottom_toTopOf="@+id/tips"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/tips"
+        android:layout_width="368dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Советы в тренировочном процессе"
+        android:textColor="#F5F5DC"
+        app:layout_constraintBottom_toTopOf="@+id/manual_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
